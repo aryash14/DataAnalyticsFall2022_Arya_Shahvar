@@ -1,5 +1,7 @@
-install.packages("ISLR")
-library(ISLR)
+if(!require("ISLR")) {
+  install.packages("ISLR")
+  library(ISLR)
+}
 data("Auto")
 head(Auto)
 summary(Auto$mpg)
