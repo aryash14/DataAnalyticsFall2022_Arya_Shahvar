@@ -2,7 +2,8 @@
 EPI_data <- read.csv("./2010EPI_data.csv")
 head(EPI_data)
 View(EPI_data)
-EPI_data <- EPI_data[1:164, ]  
+nrow(EPI_data)
+# EPI_data <- EPI_data[1:164, ]  
 View(EPI_data)
 nrow(EPI_data)
 #fixing the column name issue
@@ -14,6 +15,7 @@ EPI_data
 View(EPI_data)
 attach(EPI_data) #sets the default object
 fix(EPI_data) #launches a simple data editor
+summary(EPI)
 EPI #showing the EPI_data$EPI
 tf <- is.na(EPI) # records True values if the value is NA
 E <- EPI[!tf] # filters out NA values, new array
