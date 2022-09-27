@@ -5,7 +5,7 @@ library(dplyr)    # alternatively, this also loads %>%
 multivariate <- read.csv("./multivariate.csv")
 head(multivariate)
 attach(multivariate)
-help(lm)c #linear model
+help(lm)#linear model
 
 mm <-lm(Homeowners~Immigrant)
 mm #R object
