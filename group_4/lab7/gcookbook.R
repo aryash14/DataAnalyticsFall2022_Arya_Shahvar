@@ -14,3 +14,4 @@ ggplot(BOD, aes(x=Time, y=demand)) + geom_line() + geom_point()
 ggplot(worldpop, aes(x=Year, y=Population)) + geom_line() + geom_point()
 # same with log-y axis
 ggplot(worldpop, aes(x=Year, y=Population)) + geom_line() + geom_point() + scale_y_log10() 
+
